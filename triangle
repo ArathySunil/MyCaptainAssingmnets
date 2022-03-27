@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int i, j, x;
+    printf("Enter a number:");
+    scanf("%d", &x);
+
+    for(i = 0; i<x; i++) 
+    {
+        for(j = 0; j < (2*x); j++)
+        { 
+            if(i+j<= x - 1) 
+                printf("01");
+            else
+                printf(" ");
+                
+        }
+        printf("\n");
+    }
+}
