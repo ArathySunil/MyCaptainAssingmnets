@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+
+int main()
+{
+    int x=100,y=200;
+    printf("before swapping values are:%d and %d\n",x,y);
+    x=x*2;
+    y=y/2;
+    printf("after swapping values are:%d and %d",x,y);
+}
