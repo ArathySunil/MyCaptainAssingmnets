@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("Enter your marks  (out of 100):");
+    int m=0;
+    scanf("%d",&m);
+    char grade[14]="S\0A\0B\0C\0D\0E\0F";
+    
+    if (m>=91)
+    {
+        printf("grade=%s",&grade[0]);
+    }
+    else if (m>=81 & m<=91)
+    {
+        printf("grade=%s",&grade[2]);
+    }
+    else if (m>=71 & m<=81)
+    {
+        printf("grade=%s",&grade[4]);
+    }
+    else if (m>=61 & m<=71)
+    {
+        printf("grade=%s",&grade[6]);
+    }
+    else if (m>=51 & m<=61)
+    {
+        printf("grade=%s",&grade[8]);
+    }
+    else if (m>=41 & m<=51)
+    {
+        printf("grade=%s",&grade[10]);
+    }
+    else if (m<=40)
+    {
+        printf("grade=%s",&grade[12]);
+    }
+    else
+    {
+        printf("Invalid value");
+    }
+
+
+}
